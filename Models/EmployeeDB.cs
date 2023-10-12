@@ -16,9 +16,10 @@ namespace CRUD.Models
 
         [Required]
         [Column("Employee Email", TypeName = "varchar(100)")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "E-mail is not valid")]
         public string? Email { get; set; } = null;
 
-        [Required]
+        [Required]  
         [Column("Employee Company", TypeName = "varchar(100)")]
         public string? Company { get; set; } = null;
 

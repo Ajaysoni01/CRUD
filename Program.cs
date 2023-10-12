@@ -32,8 +32,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-     pattern: "{controller=EmployeeDBsController}/{action=EmployeeDBs}/{id?}");
-   //pattern: "{controller=Home}/{action=Index}/{id?}");
+    // pattern: "{controller=EmployeeDBsController}/{action=EmployeeDBs}/{id?}");
+   pattern: "{controller=Home}/{action=Index}/{id?}");
    // pattern: "{controller=Home}/{action=EmployeesDBs}/{id?}");
 
 app.Run();
